@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //function declaration
+
+        function squared1(num1, num2) {
+         const sum = num1 * num1;
+         const sum2 = num2 * num2;
+         const sum3 = sum + sum2;
+         const sum4 = sum3 * sum3;
+         return sum4;
+        };
+
+        console.log(squared1(5,4));
+        
+        //function expression
+
+        const squared2 = function(num1, num2) {
+        const sum = num1 * num1;
+         const sum2 = num2 * num2;
+         const sum3 = sum + sum2;
+         const sum4 = sum3 * sum3;
+         return sum4;
+        };
+
+        console.log(squared2(2,4));
+        
+
+        //arrow function
+        const squared3 = (num1, num2) => {
+        const sum = num1 * num1;
+         const sum2 = num2 * num2;
+         const sum3 = sum + sum2;
+         const sum4 = sum3 * sum3;
+         return sum4;
+        };
+
+        console.log(squared3(2,5));
+
+    </script>
+</body>
+</html>
